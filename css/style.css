@@ -1,0 +1,38 @@
+:root {
+    --fonte-principal: "Poppins", sans-serif;
+    --cinza: #9c9c9c;
+    --cinza-claro: #dddcdc;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: var(--fonte-principal);
+    font-style: normal;
+}
+
+body {
+    background-color: var(--cinza);
+}
+
+.menu-titulo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu-titulo__titulo {
+    color: var(--cinza-claro);
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+
+.menu-titulo__simbolos {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-titulo__simbolos > img {
+    width: 3em;
+    padding: 0 10px;
+}
