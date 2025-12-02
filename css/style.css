@@ -36,3 +36,14 @@ body {
     width: 3em;
     padding: 0 10px;
 }
+
+.rodape {
+    color: var(--cinza-claro);
+    display: flex;
+}
+
+.rodape__titulo > img {
+    width: 0.8em;
+    text-align: center;
+    justify-content: center;
+}
