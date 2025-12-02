@@ -37,6 +37,10 @@ body {
     padding: 0 10px;
 }
 
+.section {
+    padding: 0 5em;
+}
+
 .rodape {
     color: var(--cinza-claro);
     display: flex;
