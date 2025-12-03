@@ -2,6 +2,8 @@
     --fonte-principal: "Poppins", sans-serif;
     --cinza: #9c9c9c;
     --cinza-claro: #dddcdc;
+    --branco: #FFFFFF;
+    --preto: #000000;
 }
 
 * {
@@ -41,9 +43,18 @@ body {
     padding: 0 5em;
 }
 
+.section > h2:hover,
+.section > p:hover {
+    color: var(--branco);
+}
+
 .rodape {
     color: var(--cinza-claro);
     display: flex;
+}
+
+.rodape:hover {
+    color: var(--preto);
 }
 
 .rodape__titulo > img {
