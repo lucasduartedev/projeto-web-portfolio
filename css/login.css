@@ -1,0 +1,30 @@
+:root {
+    --fonte-principal: "Poppins", sans-serif;
+    --cinza: #9c9c9c;
+    --cinza-claro: #dddcdc;
+    --cinza-escuro: #5e5e5e;
+    --branco: #FFFFFF;
+    --preto: #000000;
+}
+
+.section-login {
+    font-weight: 600;
+}
+
+input::placeholder {
+    font-weight: 600;
+    padding: 0 5px;
+}
+
+#btn-logar {
+    margin: 1em 0;
+    padding: 3px 2em;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+}
+
+#btn-logar:hover {
+    color: var(--preto);
+    background-color: var(--branco);
+    border-color: var(--preto);
+}
