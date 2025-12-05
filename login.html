@@ -16,7 +16,7 @@
 <body>
 
     <nav class="menu-titulo">
-        <h2 class="menu-titulo__titulo">Desenvolvimento WEB </h2>
+        <a href="./index.html"><h2 class="menu-titulo__titulo">Desenvolvimento WEB </h2></a>
         <div class="menu-titulo__simbolos">
             <img src="./img/html.svg" alt="logo HTML">
             <img src="./img/css.svg" alt="logo CSS">
@@ -30,10 +30,10 @@
 
     <section class="section section-login">
         <form action="#">
-            <label for="usuario">Usuário:</label><br>
+            <label for="usuario" id="lbl-usuario">Usuário:</label><br>
             <input type="text" id="campo-usuario" name="usuario" placeholder="Usuario"><br>
             
-            <label for="senha">Senha:</label><br>
+            <label for="senha" id="lbl-senha">Senha:</label><br>
             <input type="password" id="campo-senha" name="senha" placeholder="Senha"><br>
             
             <input type="submit" value="Logar" id="btn-logar">
@@ -51,6 +51,8 @@
     </footer>
     
     <br/>
+
+    <script src="./js/logar.js"></script>
     
 </body>
 </html>
