@@ -1,6 +1,28 @@
 // * Foco no campo usuário
 document.getElementById('campo-usuario').focus();
 
+// * Campo: Mensagem de erro
+const msgErro = document.getElementById('msg-login');
+
+const msgErrorResetClassList = () => {
+    msgErro.classList.remove('sucesso');
+    msgErro.classList.remove('error');
+}
+
+function msgErroFracasso() {
+    msgErrorResetClassList();
+    msgErro.style.display = 'block';
+    msgErro.textContent = 'Dados informados incorretamente :(';
+    msgErro.classList.add('error');
+}
+
+const msgErrorSucesso = () => {
+    msgErrorResetClassList();
+    msgErro.style.display = 'block';
+    msgErro.textContent = 'Logado :)';
+    msgErro.classList.add('sucesso');
+}
+
 const btnLogar = document.querySelector('#btn-logar').addEventListener('click', (evento) => {
     // * Evitar comportamento padrão de envio de formulário
     evento.preventDefault();
@@ -15,9 +37,9 @@ const btnLogar = document.querySelector('#btn-logar').addEventListener('click', 
 
     // * Validação
     if(usuario.value === user && senha.value === pass) {
-        alert('Usuário logado!');
+        msgErrorSucesso();
     } else {
-        alert('Usuário não logado!');
+        msgErroFracasso();
     }
 
 });

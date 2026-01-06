@@ -47,6 +47,10 @@ input:focus {
     border-color: var(--preto);
 }
 
+#msg-login {
+    display: none;
+}
+
 .error {
     color: var(--vermelho-claro)
 }
