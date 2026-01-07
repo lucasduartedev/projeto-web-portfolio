@@ -1,11 +1,16 @@
 :root {
     --fonte-principal: "Poppins", sans-serif;
-    --cinza: #9c9c9c;
-    --cinza-claro: #dddcdc;
-    --cinza-escuro: #5e5e5e;
+
+    --palette-cinza-claro: #dbd8e3;
+    --palette-cinza: #5c5470;
+    --palette-cinza-escuro: #352f44;
+    --palette-preto: #2a2438;
+
     --branco: #FFFFFF;
     --preto: #000000;
+
     --verde-claro: #53e953;
+    --azul: #4446ec;
     --vermelho-claro: #ec4949;
 }
 
@@ -38,7 +43,7 @@ input:focus {
     margin: 1em 0;
     padding: 3px 2em;
     font-weight: 600;
-    color: var(--cinza-escuro);
+    color: var(--palette-cinza-escuro);
 }
 
 #btn-logar:hover {
@@ -55,5 +60,5 @@ input:focus {
     color: var(--vermelho-claro)
 }
 .sucesso {
-    color: var(--verde-claro);
+    color: var(--azul);
 }
