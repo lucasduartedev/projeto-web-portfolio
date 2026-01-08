@@ -1,0 +1,35 @@
+:root {
+    --fonte-principal: "Poppins", sans-serif;
+
+    --palette-cinza-claro: #dbd8e3;
+    --palette-cinza: #5c5470;
+    --palette-cinza-escuro: #352f44;
+    --palette-preto: #2a2438;
+
+    --branco: #FFFFFF;
+    --preto: #000000;
+
+    --verde-claro: #53e953;
+    --azul: #4446ec;
+    --vermelho-claro: #ec4949;
+}
+
+.menu-titulo > a {
+    text-decoration: none;
+}
+
+.menu-titulo > a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--branco);
+}
+
+.section-jogo > p {
+    font-weight: 600;
+}
+
+.sucesso {
+    color: var(--azul);
+}
+.fracasso {
+    color: var(--vermelho-claro)
+}
