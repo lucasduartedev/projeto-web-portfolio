@@ -33,18 +33,22 @@
 
         <p>Escolha uma opção</p>
         <form>
-            <input type="radio" id="pedra" name="jogo">
+            <input type="radio" id="pedra" name="jogo" value="pedra">
             <label for="pedra">Pedra</label><br/>
 
-            <input type="radio" id="papel" name="jogo"">
+            <input type="radio" id="papel" name="jogo" value="papel">
             <label for="papel">Papel</label><br/>
 
-            <input type="radio" id="tesoura" name="jogo">
+            <input type="radio" id="tesoura" name="jogo" value="tesoura">
             <label for="tesoura">Tesoura</label><br/>
 
-            <input type="button" value="Jogar">
+            <input type="button" value="Jogar" id="btn_jogar"
 
         </form>
+
+        <div class="resultado-jogo">
+            <p class="texto-resultado">Esperando usuário jogar!</p>
+        </div>
 
     </section>
     
@@ -60,7 +64,7 @@
     
     <br/>
 
-    <script type="module" src="./js/logar.js"></script>
+    <script type="module" src="./js/jogo-pedra-papel-tesoura.js"></script>
     
 </body>
 </html>

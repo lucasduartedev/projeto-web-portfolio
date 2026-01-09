@@ -33,3 +33,11 @@
 .fracasso {
     color: var(--vermelho-claro)
 }
+
+.texto-resultado {
+    display: none;
+}
+
+.mostrar-mensagem {
+    display: block;
+}
