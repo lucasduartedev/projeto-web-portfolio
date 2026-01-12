@@ -51,6 +51,10 @@ body {
     padding: 0 5em;
 }
 
+.projeto-status-em-andamento {
+    text-decoration: line-through;
+}
+
 .rodape {
     color: var(--palette-cinza-claro);
     background-color: var(--palette-cinza);
