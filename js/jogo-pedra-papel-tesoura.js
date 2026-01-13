@@ -2,17 +2,17 @@
 const btn_jogar = document.querySelector('#btn_jogar').addEventListener('click', (evento) => {
 
     // * opção escolhida pelo usuário
-    const btnOpcoes = document.querySelector('input[name="jogo"]:checked');
+    const btnOpcoesUsuario = document.querySelector('input[name="jogo"]:checked');
     let escolhaDoUsuario;
 
     // * Texto resultado!
     let texto_resultado = 'Não jogado ainda';
 
-    if(!btnOpcoes) {
+    if(!btnOpcoesUsuario) {
         texto_resultado = 'Nada escolhido!';
     } else {
-        // console.log('Escolha do usuário:' + btnOpcoes.value);
-        escolhaDoUsuario = btnOpcoes.value;
+        // console.log('Escolha do usuário:' + btnOpcoesUsuario.value);
+        escolhaDoUsuario = btnOpcoesUsuario.value;
     }
 
     // * Escolha da máquina
@@ -21,8 +21,7 @@ const btn_jogar = document.querySelector('#btn_jogar').addEventListener('click',
     // console.log(escolhaDaMaquina);
 
     // * verificar ganhador: MÁQUINA vs HUMANO
-
-
+    
     if(escolhaDoUsuario == escolhaDaMaquina) {
         texto_resultado = 'Jogo empatado!';
     }

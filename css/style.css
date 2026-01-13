@@ -13,13 +13,14 @@
 }
 
 * {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 0;
     font-family: var(--fonte-principal);
     font-style: normal;
 }
 
 body {
+    margin: 0 auto;
     background-color: var(--palette-cinza-claro);
     color: var(--palette-preto);
 }
@@ -27,6 +28,7 @@ body {
 .menu-titulo {
     display: flex;
     align-items: center;
+    justify-content:space-around;
     flex-direction: row;
     background-color: var(--palette-cinza);
 }
@@ -59,6 +61,7 @@ body {
     color: var(--palette-cinza-claro);
     background-color: var(--palette-cinza);
     display: flex;
+    justify-content:space-around;
     padding: 1.2em 0;
 }
 
