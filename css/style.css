@@ -59,6 +59,7 @@ body {
     color: var(--palette-cinza-claro);
     background-color: var(--palette-cinza);
     display: flex;
+    padding: 1.2em 0;
 }
 
 .rodape__titulo > img {
