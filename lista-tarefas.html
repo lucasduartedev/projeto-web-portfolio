@@ -24,8 +24,6 @@
         </div>
     </nav>
 
-    <hr/>
-
     <br/>
 
     <section class="section section-jogo">
@@ -38,39 +36,46 @@
 
         <form>
             <label for="titulo-tarefa">Nome da tarefa</label><br>
-            <input type="text" nome="titulo-tarefa"><br>
+            <input type="text" nome="titulo-tarefa" data-input-nova-tarefa><br>
 
-            <input type="button" name="btn-cadastrar" id="btn-cadastrar" value="Cadastrar">
+            <input type="button" name="btn-incluir-tarefa" id="btn-incluir-tarefa" value="Incluir nova tarefa" data-btn-incluir-tarefa>
         </form>
         
     </section>
     
-    <section class="section section-cadastro">
+    <br>
+    <hr>
+
+    <section class="section section-listagem-tarefas">
         <h3>Listagem</h3>
-        <ul>
-            <li>
-                <p>Nome da tarefa</p>
-                <div>
-                    <button>botão Concluir</button>
-                    <button>botão Deletar</button>
+        <ul class="listagem-tarefas" data-tarefa-listagem>
+            <li class="listagem-tarefas__item">
+                <p class="listagem-tarefas__nome-tarefa">Nome da tarefa 1</p>
+                <div class="listagem-tarefas__botoes">
+                    <button class="btn-concluir">Concluir</button>
+                    <button class="btn-deletar">Deletar</button>
                 </div>
             </li>
+            <li class="listagem-tarefas__item tarefa-concluida">
+                <p class="listagem-tarefas__nome-tarefa">Nome da tarefa 2</p>
+                <div class="listagem-tarefas__botoes">
+                    <button class="btn-concluir">Concluir</button>
+                    <button class="btn-deletar">Deletar</button>
+                </div>
+            </li>
+            
         </ul>
     </section>
 
     <br/>
 
-    <hr/>
-
-    <br/>
-    
     <footer class="rodape">
         <h3 class="rodape__titulo">Direitos reservados <img src="./img/copyright.svg" alt="logo direitos reservados"></h3>
     </footer>
     
     <br/>
 
-    <script type="module" src="./js/jogo-pedra-papel-tesoura.js"></script>
+    <script type="module" src="./js/lista-tarefas.js"></script>
     
 </body>
 </html>
