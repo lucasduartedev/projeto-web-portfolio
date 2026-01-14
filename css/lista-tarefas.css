@@ -1,0 +1,49 @@
+:root {
+
+    --palette-cinza-claro: #dbd8e3;
+    --palette-cinza: #5c5470;
+    --palette-cinza2: #797585;
+    --palette-cinza-escuro: #352f44;
+    --palette-preto: #2a2438;
+
+    /* --cinza: #9c9c9c; */
+    --cinza-claro: #dddcdc;
+    --branco: #FFFFFF;
+    --preto: #000000;
+
+}
+
+.listagem-tarefas {
+
+}
+
+.listagem-tarefas__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--palette-cinza);
+    padding: 0 0.3em;
+    margin: 2px 0;
+}
+
+.listagem-tarefas__nome-tarefa {
+    font-weight: 600;
+}
+
+.listagem-tarefas__botoes {
+
+}
+
+.tarefa-concluida {
+    text-decoration: line-through;
+    background-color: var(--palette-cinza2);
+    font-weight: 400;
+}
+
+.btn-concluir {
+    font-weight: 600;
+}
+
+.btn-deletar {
+    font-weight: 600;
+}
