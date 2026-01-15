@@ -11,6 +11,9 @@
     --branco: #FFFFFF;
     --preto: #000000;
 
+    --verde-concluir: #14cc3cd8;
+    --vermelho-deletar: #ff0000bd;
+
 }
 
 .listagem-tarefas {
@@ -30,20 +33,25 @@
     font-weight: 600;
 }
 
-.listagem-tarefas__botoes {
-
-}
-
 .tarefa-concluida {
     text-decoration: line-through;
     background-color: var(--palette-cinza2);
     font-weight: 400;
 }
 
+.listagem-tarefas__botoes > button {
+    padding: 2px 10px;
+    color: var(--branco);
+    border: 0px solid var(--branco);
+}
+
+
 .btn-concluir {
     font-weight: 600;
+    background-color: var(--verde-concluir);
 }
 
 .btn-deletar {
     font-weight: 600;
+    background-color: var(--vermelho-deletar);
 }
