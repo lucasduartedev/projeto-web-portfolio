@@ -45,13 +45,39 @@
     border: 0px solid var(--branco);
 }
 
+#input-nova-tarefa {
+    padding: 2px 10px;
+}
+
+#btn-incluir-tarefa {
+    margin: 5px 0;
+    border: none;
+    padding: 2px 10px;
+    font-weight: 600;
+    background-color: var(--palette-cinza);
+    color: var(--branco);
+}
+
+#btn-incluir-tarefa:hover {
+    background-color: var(--palette-cinza2);
+}
 
 .btn-concluir {
     font-weight: 600;
     background-color: var(--verde-concluir);
 }
 
+.btn-concluir:hover {
+    background-color: var(--branco);
+    color: var(--verde-concluir);
+}
+
 .btn-deletar {
     font-weight: 600;
     background-color: var(--vermelho-deletar);
+}
+
+.btn-deletar:hover {
+    background-color: var(--branco);
+    color: var(--vermelho-deletar);
 }
